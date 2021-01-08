@@ -29,3 +29,11 @@ pip install -r requirements.txt
 ```
 
 ## Running program
+
+```bash
+python main.py
+```
+
+It may take a few seconds to load.
+
+## 
