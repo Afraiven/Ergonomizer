@@ -1,17 +1,31 @@
 # Ergonomizer
-Project created for a competition
 
-Ergonomizer to program mający na celu promocje ergonomii pracy przy komputerze,
-zawiera on kilka przydatnych linków oraz funkcji pozwalających kontrolować naszą pozycję, częstotliwość mrugania oraz przypomina nam o rzeczach takich jak przerwy, ćwiczenia czy picie wody.
-Jako iż przeważająca część społeczeństwa coraz częściej spędza długie godziny siedząc przed komputerem ważne jest aby wiedzieli że przestrzeganie kilku prostych zasad pomoże im zadbać o swoje zdrowie. Ergonomizer jest wszystkim czego potrzeba aby poznać oraz stosować się do tych zasad.
+Project created for a competition | not fully completed
 
-Po włączeniu programu ukazuje się okno startowe z informacją oraz możliwością zmiany języku.
-Jest tak również przycisk 'Rozpocznij'  pozwalający przejść od drugiego okna, w którym można aktywować 3 funkcje, które oferuje program, jednakże przed włączeniem ich zalecane jest skalibrowanie kamery, wartości wykrywania mrugnięcia i wskazanie długości przekątnej ekranu w oknie 'Skalibruj'
-Funkcje:
-1. Mruganie - sprawdza częstotliwość mrugania korzystając z modułu pythona - 'dlib'.
+Ergonomizer's main goal is promoting ergonomics and health.
+It's got bunch of useful features. 
+Blinking - counting amount of blinks
+Distance - notifies when user is too close to the screen
+Reminder - reminds you about breaks, drinking water and stretching
 
-2. Odległość - powiadamia użytkownika, kiedy ten zbliży się na odległość, która nie jest odpowiednia (odległość ta zależy od ustawionej w ekranie kalibracji przekątnej ekranu np. dla 15 cali to 40 cm dla 19 cali 60 cm itp.)
+![screen](https://user-images.githubusercontent.com/65568833/104036189-65a20b80-51d3-11eb-9cd3-f24bd5a429f0.png)
 
-3. Przypominacz - służy on do przypominania od robieniu sobie przerw, aktywuje się co 15 minut.
+## Getting Started
 
-Jeżeli funkcja 'Mruganie' bądz 'Odległość' będą włączone przez m.in. 10 minut ich kolor zmieni się na zielony oraz będzie możliwe utworzenie podsumowującego raportu używając przycisku 'Utwórz nowy raport'
+There are two languages - Polish and English.
+You can easily switch between them by clicking on the flag.
+
+It's highly recommended to calibrate program before first use. In order to do this, please go to the Calibration section and follow instructions.
+
+After calibration you can start using main features - Blinking, Distance and Reminder.
+When measurement functions are being used for more then 10 minutes they turn red and you can create a report showing results.
+
+### Installing
+
+Before running program, you should install some packages with:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running program
